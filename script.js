@@ -4,7 +4,7 @@ let chartInstance = null;
 let dashboardData = null;
 
 async function fetchData(grade, subject) {
-  const res = await fetch(`https://corsproxy.io/?${encodeURIComponent(`${API_URL}?grade=${grade}&subject=${subject}`)}`);
+  const res = await fetch(`${API_URL}?grade=${grade}&subject=${subject}`);
   const json = await res.json();
   dashboardData = json;
   updateProficiencyDropdown(Object.keys(dashboardData));
