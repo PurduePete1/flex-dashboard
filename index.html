@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+</head>
+<body>
+  <div class="dashboard-container glass">
+    <h1 class="dashboard-title">
+        <span class="school-name">Castle North Middle School</span><br>
+        <span class="flex-label">Flex Data</span>
+        <span class="year-tag">2024–2025</span>
+      </h1>
+
+    <div class="controls">
+      <div>
+        <label for="grade">Grade:</label>
+        <select id="grade">
+          <option value="6thData">6th Grade</option>
+          <option value="7thData">7th Grade</option>
+          <option value="8thData">8th Grade</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="subject">Subject:</label>
+        <select id="subject">
+          <option value="ela">ELA</option>
+          <option value="math">Math</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="proficiency">Proficiency Level:</label>
+        <select id="proficiency">
+          <option disabled selected>Choose...</option>
+        </select>
+      </div>
+    </div>
+    <div class="button-row">
+        <button id="showData">Show Data</button>
+        <button id="clearChart">Clear</button>
+      </div>
+
+      <div id="totalSummary" class="total-summary"></div>
+
+    <canvas id="chart" width="600" height="300"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

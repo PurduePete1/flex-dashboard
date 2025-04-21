@@ -1,0 +1,173 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #2c3e50, #34495e);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    padding-top: 40px;
+  }
+  
+  .dashboard-container {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 2.5rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    width: 720px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    margin-bottom: 0.25rem;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+  }
+  
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .controls label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-right: 0.5rem;
+    color: #e0e0e0;
+  }
+  
+  .controls > div {
+    flex: 1 1 30%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 550px) {
+    .controls > div {
+      flex: 1 1 100%;
+    }
+  }
+  
+  
+  select {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    outline: none;
+    appearance: none;
+    transition: background 0.2s ease;
+    backdrop-filter: blur(10px);
+    min-width: 140px;
+  }
+  
+  select option {
+    color: #000;
+  }
+  
+  select:hover,
+  select:focus {
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  canvas#chart {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: inset 0 0 10px rgba(255,255,255,0.05);
+  }
+  
+  .button-row {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem; /* 👈 Add this line */
+  }
+  
+  button {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    cursor: pointer;
+    backdrop-filter: blur(10px);
+    transition: all 0.2s ease;
+  }
+  
+  button:hover {
+    background: rgba(255,255,255,0.2);
+  }
+
+  .total-summary {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: rgba(255,255,255,0.08);
+    padding: 0.75rem 1.25rem;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  }
+
+  .dashboard-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+  }
+  
+  .school-name {
+    font-size: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.15);
+  }
+  
+  .flex-label {
+    font-size: 2.25rem;
+    font-weight: 800;
+    display: inline-block;
+    background: linear-gradient(to right, #00f0ff, #38e0c2);
+    background-clip: text;              /* Standard */
+    -webkit-background-clip: text;      /* For WebKit (Chrome/Safari) */
+    -webkit-text-fill-color: transparent;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+  }
+  
+  
+  .year-tag {
+    display: block;
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.75);
+    margin-top: 0.25rem;
+    letter-spacing: 1px;
+  }
+  
+  
